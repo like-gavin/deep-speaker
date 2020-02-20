@@ -23,7 +23,7 @@ Now let's clone the repository, create a virtual environment, install the depend
 ```bash
 git clone git@github.com:philipperemy/deep-speaker.git && cd deep-speaker
 
-DS_DIR=~/deep-speaker-data
+DS_DIR=~/deep-speaker/deep-speaker-data
 AUDIO_DIR=$DS_DIR/VCTK-Corpus/
 CACHE_DIR=$DS_DIR/cache/
 
