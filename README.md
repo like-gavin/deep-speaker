@@ -7,7 +7,7 @@ This is the current version that works correctly with a dataset of ~110 speakers
 
 The bigger dataset and model impl can be found here: [/v3](v3). It's still a work in progress (not stable).
 
-## Get Started (Only Linux/MacOS)
+## Get Started (Only Windows)
 
 **> I've never tested the code on Windows and it will probably need some adjustments to work. It should work fine on Linux/MacOS.**
 
@@ -29,8 +29,10 @@ $CACHE_DIR = "$DS_DIR\cache\"
 
 mkdir -p $DS_DIR
 
-./download_vctk.sh # if it's too long, consider using a download accelerator like: axel.
-mv ~/VCTK-Corpus $DS_DIR
+#download the dataset manually
+.\download_vctk.sh # if it's too long, consider using a download accelerator like: axel.
+
+mv ~\VCTK-Corpus $DS_DIR
 
 # will probably work on every python3 impl (e.g. 3.5).
 virtualenv -p python3.6 $DS_DIR/venv-speaker
